@@ -26,6 +26,9 @@
 /****************/
 /* JOUW STYLING */
 /****************/
-
+img {
+	max-height: 10em;
+	max-width: auto;
+}
 /* jouw code */
 

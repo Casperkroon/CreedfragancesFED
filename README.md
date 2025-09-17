@@ -60,7 +60,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
+  Screenreader:
+  - Gebrek aan H1, zorgt voor verwarring tijdens het skippen tussen kopjes.
+  - Werkt maar onduidelijk.
+  - Lijkt geen mogelijk te hebben om terug te skippen
+
+
   Lijst met je bevindingen die in de test naar voren kwamen:
+  - Geen echte H1
+  - Veel fouten in HTML, veel onnodige / in tags, verder issues waar ik niet veel van begreep.
+  - Alleen gebruik van UL
+  - Decoratieve images gebruiken geen null alt
+  - Video autoplayt, heeft controls.
+  - Geen dark en light of high contrast mode.
+
 
 </details>
 
@@ -72,7 +85,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdownschets.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
@@ -94,14 +107,24 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+  - html schrijven was prima te doen
+
+  <img src="readme-images/website1.png" width="375px" alt="screenshot website">
+  <img src="readme-images/website2.png" width="375px" alt="screenshot website">
+  <img src="readme-images/website3.png" width="375px" alt="screenshot website">
+  <img src="readme-images/website4.png" width="375px" alt="screenshot website">
+
+  <img src="readme-images/code1.png" width="375px" alt="screenshot code">
+  <img src="readme-images/code2.png" width="375px" alt="screenshot code">
+  <img src="readme-images/code3.png" width="375px" alt="screenshot code">
+
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Yaël           | Joep               | Casper       | student 4        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | Hamburgermenu  | Fontface/family    | Zoekbalk     | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
 
