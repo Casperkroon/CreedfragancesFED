@@ -237,19 +237,23 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/eindscreenshot1.png" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/eindscreenshot2.png" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/eindscreenshot3.png" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  header nav bar is naar mijn mening heel accuraat gelukt en ben trots op hoe alles staat.
+  <img src="readme-images/eindscreenshot1.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  
+  footer moest responsive worden maar ik kwam er niet uit
+  <img src="readme-images/footerss" width="375px" alt="bummer">
 </details>
 
 
