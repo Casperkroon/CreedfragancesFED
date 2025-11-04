@@ -1,0 +1,278 @@
+@font-face {
+	font-family: "Copperplate-Medium";
+	src: url("../fonts/Copperplate-Medium.woff")
+}
+@font-face {
+	font-family: "Copperplate-Light";
+	src: url("../fonts/Copperplate-Light.woff")
+}
+
+h1 {
+    visibility: hidden;
+    display: none;
+}
+
+main section:nth-of-type(1) {
+    display:grid;
+    text-align: center;
+    background-color: rgb(242, 242, 242);
+}
+
+main div img {
+    height: auto;
+    max-width: 100%;
+}
+
+/* @media (min-width:57em) {
+
+    main div img {
+        height: auto;
+        max-width: 45%;
+    }
+} */
+
+main > a:first-of-type {
+    display: inline-block; 
+    margin: 2em; 
+}
+
+/*MAIN SECTION 2 + CAROUSEL*/
+
+main div section:nth-of-type(1) > p,h2 {
+    flex-basis: 100%;
+    text-transform: uppercase;
+    font-family: "Copperplate-Light";
+    font-size: 1em;
+    letter-spacing: 0.1em;
+  }
+
+  main div section:nth-of-type(1) > h2 {
+    font-size: 2em;
+  }
+
+main div section:nth-of-type(1) {
+    /* display: flex;
+    flex-direction: column; */
+    position: relative;
+    overflow: hidden;
+    outline: none;
+    margin: 1em;
+}
+
+main div section:nth-of-type(1) > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+
+    overflow: hidden;
+    scroll-snap-type: inline mandatory;
+    scroll-behavior: smooth;
+
+    -webkit-overflow-scrolling: touch; 
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+main div section:nth-of-type(1) > ul::-webkit-scrollbar {
+    display:none;
+
+}
+
+main div section:nth-of-type(1) > ul li {
+    flex-basis: 100%;
+    flex-shrink: 0;
+    scroll-snap-align:center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main div section:nth-of-type(1) > ul li > img {
+    display:block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    
+}
+
+main div section:nth-of-type(1) > a {
+    position: absolute;
+    width: 3em;
+    aspect-ratio: 1/1;
+    top: calc(50% - 1.5em);
+
+    color: white;
+    background-color: lightslategray;
+    outline: none;
+    box-shadow: inset 0 0 0 1px currentColor;
+
+    display:grid;
+    place-items:center;
+  
+    transition: 0.5s;
+}
+
+main div section:nth-of-type(1) > a[href="previous"] {
+    left:-3.5em;
+  }
+main div section:nth-of-type(1) > a[href="next"] {
+    right: -3.5em;
+}
+
+main div section:nth-of-type(1):hover > a[href="previous"],
+main div section:nth-of-type(1):focus-within > a[href="previous"] {
+    left: .5em;
+}
+main div section:nth-of-type(1):hover > a[href="next"],
+main div section:nth-of-type(1):focus-within > a[href="next"] {
+    right: .5em;
+}
+
+main div section:nth-of-type(1) > a::before,main section:nth-of-type(1) > a::after {
+    content: "";
+    position: absolute;
+    width: 1em;
+    height: 4px;
+    background-color: currentColor;
+}
+
+main div section:nth-of-type(1) > a[href=previous]::before {
+	transform-origin: 2px center;
+	transform: translateY(0) rotate(45deg);
+}
+main div section:nth-of-type(1) > a[href=previous]::after {
+	transform-origin: 2px center;
+	transform: translateY(0) rotate(-45deg);
+}
+
+main div section:nth-of-type(1) > a[href=next]::before {
+	transform-origin: calc(100% - 2px) center;
+	transform: translateY(0) rotate(45deg);
+}
+main div section:nth-of-type(1) > a[href=next]::after {
+	transform-origin: calc(100% - 2px) center;
+	transform: translateY(0) rotate(-45deg);
+}
+
+/* Einde carousel */
+
+
+div {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:2rem;
+}
+
+@media (min-width: 57em) {
+    div {
+        grid-template-columns: 55% 45%;
+        align-items: start;
+        grid-auto-rows: min-content;
+    }
+
+    div > section:nth-of-type(1) {
+        grid-column: 1 / 2;
+        grid-row: 1 / span 4;
+    }
+
+    div > section:nth-of-type(n+2) {
+        grid-column: 2 / 3;
+        max-width: 80%;
+      }
+
+      main details {
+        max-width: 55%;
+    }
+}
+
+main div section:nth-of-type(3){
+    border-top: solid rgb(183, 183, 183) 1px;
+    border-bottom: solid rgb(183, 183, 183) 1px;
+    display: flex;
+}
+
+main div section:nth-of-type(4) {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+main div section:nth-of-type(4) > p {
+    flex-basis: 100%;
+    text-transform: uppercase;
+    font-family: "Copperplate-Light";
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+  }
+
+main div section:nth-of-type(4) ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75em;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+main div section:nth-of-type(4) button {
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    padding: 0.8em 1em;
+    font-family: "Copperplate-Light";
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  main div section:nth-of-type(4) h3 {
+    font-family: "Copperplate-Light";
+    font-size: 1.5em;
+    margin-top: 1em;
+    font-weight: 400;
+    /* flex-basis: 100%; */
+  }
+
+  main div section:nth-of-type(4) h3:first-of-type{
+    text-decoration: underline;
+  }
+
+  main div section:nth-of-type(4) button:hover {
+    background-color: black;
+    color: white;
+  }
+
+  main div section:nth-of-type(5) a {
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: "Copperplate-Light";
+    letter-spacing: 0.1em;
+    padding: 0.7em 5em;
+    text-decoration: none;
+  }
+
+
+main details > img {
+    max-height: 15em;
+    max-width: auto;
+}
+
+main summary {
+    border-top: solid rgb(183, 183, 183) 1px;
+    border-bottom: solid rgb(183, 183, 183) 1px;
+    font-family: "Copperplate-Light";
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    padding: 1em;
+
+}
+
+main details p,h4 {
+    font-family: "Caslon";
+    letter-spacing: 0.1em;
+    font-size: 1em;
+}

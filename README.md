@@ -136,6 +136,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - nog een punt
   - ...
 
+  - 3 stylesheets, 1 algemene, 1 per pagina zelf
+  - nav 1 diep
+  - https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/search
+    Actions weghalen
+
 </details>
 
 
@@ -148,25 +153,24 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Basis CSS van de website ging goed, laatste uitwerking van main HTML ook gelukt. Wat lastig ging
+  was de navbar. Er waren een aantal problemen die ervoor zorgde dat deze niet werkte zoals bedoeld.
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Casper         | Joep               | Yael         | student 4        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | issues navbar  | Navbar             | navbar       | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
+  - Grid gebruiken voor de navbar ipv flexbox
+  - 
 - ...
 
 </details>
@@ -182,6 +186,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+
+  -Alles is berijkbaar met screenreader, logische volgorde deze keer. Alles duidelijk opgenoemd.
+  -H1 is aanwezig, maar onzichtbaar.
+
+
 
 </details>
 
@@ -201,18 +210,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Casper         | Yael               | Joep         | Abdenour         |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | Responsiveness | grid               | afbeeldingen   |                |
+  | Navbar en carousel|                 | juist scalen |                  |
   | ...            | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
+  - flexbox gebruiken ipv grid voor navbar.
+  - juiste positions gebruiken, kijken via inspect element wat de oorzaak is
   - nog een punt
   - ...
 
@@ -256,8 +265,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. [bron 1](https://codepen.io/shooft/pen/yLKjzWa) voor carousel
+  2. https://www.creedfragrance.com afbeeldingen en fonts
+  3. Chatgpt voor het responsive maken van de carousel. Prompt = code gepaste + how to make it so the carousel
+  allows for 2 and 3 images next to eachother when the page gets big enough.
 
 </details>

@@ -3,93 +3,153 @@
 	
 <head>
 	<meta charset="UTF-8">
-	<meta name="author" content="jouw naam">
+	<meta name="author" content="Casper Kroon">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<title>Creed Fragrances | Luxury Fragrance & Perfume</title>
+	<title>Creed Fragrances | Luxury Fragrance & Perfume Home page</title>
 	
 	<link href="styles/style.css" rel="stylesheet">
+	<link href="styles/stylemain.css" rel="stylesheet">
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 
 <body>
 	<header>
+
+		<a href="#"><img src="images/creedlogo.png" alt="creed logo"></a>
+
 		<!-- Main navigatie -->
-		<a href="#">Store Locator</a>
-		<a href="#">Country Locator</a>
 
-		<a href="#"><img src="images/creed.png" alt="Creed logo"></a>
+		<a href="#" class="visually-hidden">Skip to content</a>
+			
+			<button aria-hidden="true"><img src="images/hamburger.png" alt="open"></button>
 
-		<nav>
-			<ul>
-				<li>
-					<a href="#">New</a>
-					<a href="#">Fragrances</a>
-					<a href="#">Gifts</a>
-					<a href="#">Body</a>
-					<a href="#">Accessories</a>
-					<a href="#">Home</a>
-					<a href="#">The House of Creed</a>
-				</li>
-			</ul>
-		</nav>
 
-		<a href="#">Account / Login</a>
-        <a href="#">Cart (0)</a>
+			<nav>
+				<button aria-hidden="true"><img src="images/crossicon.png" alt="close"></button>
+
+				<ul>
+					<li>
+						<a href="#">New</a>
+					</li>
+					<li>
+						<a href="#">Fragrances</a>
+					</li>
+					<li>
+						<a href="#">Gifts</a>
+					</li>
+					<li>
+						<a href="#">Body</a>
+					</li>
+					<li>
+						<a href="#">Accessories</a>
+					</li>
+					<li>
+						<a href="#">Home</a>
+					</li>
+					<li>
+						<a href="#">The House of Creed</a>
+					</li>
+				</ul>
+				
+			</nav>
+
+			<button><img src="images/magnifyingglass.png" alt="zoekbalk"></button>
+
+			  <form>
+				<label for="movie" class="visually-hidden">Search</label>
+				<input type="search" id="movie" name="q" placeholder="Search for a product..." />
+				<button type="submit">
+				  <img src="images/magnifyingglass.png" alt="magnifying glass">
+				</button>
+			  </form>
+			
+
+		<menu>
+			<li>
+				<a href="#"><img src="images/profile.png" alt="account"></a>
+			</li>
+			<li>
+				<a href="#"><img src="images/shoppingbasket.png" alt="shopping"></a>
+			</li>
+		</menu>
+		
+
+		<!-- <a href="#">Account / Login</a>
+        <a href="#">Cart (0)</a> -->
+
 	</header>
 
 	<main>
 		<section>
+		<p>Complimentary Shipping and Samples with Orders*</p>
+		</section>
+
+		<section>
 			<!-- Oud Zarian -->
+			<video width="320" height="240" controls>
+				<source src="images/oud_zarian_video.mp4" type="video/mp4">
+			</video>
 			<h1>Introducing</h1>
 			<h2>Oud Zarian</h2>
 			<p>Enter a rarefied realm with Oud Zarian. Crowned with the most precious 80-year-aged oud,
 				this fragrance is a testament to patience and the pursuit of perfection.</p>
-			<video width="320" height="240" controls>
-				<source src="images/oud_zarian_video.mp4" type="video/mp4">
-			</video>
-			<button><a href="#">Shop Now</a></button>
-			<button><a href="#">Discover More</a></button>
+			<a href="#">Shop Now</a>
+			<a href="#">Discover More</a>
+
+			<p>Fragrances from The House of Creed are cut differently,
+				hand-crafted from seed to scent with heritage, rarity and timeless mastery</p>
 		</section>
 
-		<section>
+		<section  id="justButtons" class="caroCarrousel">
 			<!-- Bestsellers -->
 			<h2>Bestsellers</h2>
-			<h3>Aventus</h3>
-			<p>from 165.00€</p>
-			<img src="images/aventus.avif" alt="image of creed aventus bottle">
-			<button><a href=#>Add</a></button>
-
-			<h3>Absolu Aventus</h3>
-			<p>from 270.00€</p>
-			<img src="images/absolu_aventus.avif" alt="image of creed absolu aventus bottle">
-			<button><a href=#>Add</a></button>
-
-			<h3>Aventus For Her</h3>
-			<p>from 165.00€</p>
-			<img src="images/aventus_forher.avif" alt="image of creed aventus for her bottle">
-			<button><a href=#>Add</a></button>
-
-			<h3>Queen Of Silk</h3>
-			<p>from 165.00€</p>
-			<img src="images/qos.avif" alt="image of queen of silk bottle">
-			<button><a href=#>Add</a></button>
+			<ul>
+				<li>
+					<img src="images/aventus.avif" alt="image of creed aventus bottle">
+					<h3>Aventus</h3>
+					<p>from 165.00€</p>
+					<a href="aventus.html">Add to cart</a>
+				</li>
+				<li>
+					<img src="images/absolu_aventus.avif" alt="image of creed absolu aventus bottle">
+					<h3>Absolu Aventus</h3>
+					<p>from 270.00€</p>
+					<a href=#>Add to cart</a>
+				</li>
+				<li>
+					<img src="images/aventus_forher.avif" alt="image of creed aventus for her bottle">
+					<h3>Aventus For Her</h3>
+					<p>from 165.00€</p>
+					<a href=#>Add to cart</a>
+				</li>
+				<li>
+					<img src="images/qos.avif" alt="image of queen of silk bottle">
+					<h3>Queen Of Silk</h3>
+					<p>from 165.00€</p>
+					<a href=#>Add to cart</a>
+				</li>
+			</ul>
+			<a href="previous"></a>
+			<a href="next"></a>
 		</section>
 
 		<section>
 			<!-- Exclusieve offers -->
 			<h2>Exclusive To You</h2>
+			<img src="images/royal_zwart.avif" alt="image of royal mayfair bottle">
 			<h3>Complimentary Delivery</h3>
 			<p>Your chosen fragrance is yours to enjoy with complimentary standard delivery,
 				ensuring a seamless shopping experience.</p>
-			<img src="images/royal_zwart.avif" alt="image of royal mayfair bottle">
-			<button><a href="#">Shop Now</a></button>
+			<a href="#">Shop Now</a>
+		</section>
 
+		<section>
+			<img src="images/samples_zwart.avif" alt="image of creed samples">
 			<h3>Complimentary Samples</h3>
 			<p>Take your experience to the next level with two complimentary samples of your choice,
 				available on selected orders.</p>
-			<img src="images/samples_zwart.avif" alt="image of creed samples">
-			<button><a href="#">Shop Now</a></button>
+			<a href="#">Shop Now</a>
 		</section>
 
 	</main>
@@ -98,17 +158,22 @@
 		<section>
 			<!-- Nieuwsbrief -->
 			<p>Subscribe Today. Receive 10% off your first order and be the first to know about the latest
-				launches and exclusive collections.</p>>
-			<button><a href="#">Sign Up</a></button>
+				launches and exclusive collections.</p>
+			<a href="#">Sign Up</a>
+		
+			<!-- Social media links-->
+			<h2>Connect with us</h2>
+			<a href="#"><img src="images/facebook.png" alt="facebook logo"></a>
+			<a href="#"><img src="images/instagram.png" alt="instagram logo"></a>
+			<a href="#"><img src="images/xlogo.png" alt="x logo"></a>
+			<a href="#"><img src="images/tiktok.png" alt="tiktok logo"></a>
 		</section>
 
 		<section>
-			<h2>Connect with us</h2>
-			<a href="#"><img src="images/facebook.png"></a>
-			<a href="#"><img src="images/instagram.png"></a>
-			<a href="#"><img src="images/xlogo.png"></a>
-			<a href="#"><img src="images/tiktok.png"></a>
+		<img src="images/creedlogo.png" alt="creed logo">
+		</section>
 
+		<section>
 			<h3>Help & Information</h3>
 			<ul>
 				<li><a href="#">Contact Us</a></li>
@@ -124,21 +189,24 @@
 				<li><a href="#">International</a></li>
 			</ul>
 
-			<p>2025 © Creed Fragrances</p>
-
-			<h3>Pay Securely With</h3>
-			<ul>
-				<li><a href="#">Visa Electron</a></li>
-				<li><a href="#">Visa</a></li>
-				<li><a href="#">PayPal</a></li>
-				<li><a href="#">Mastercard</a></li>
-				<li><a href="#">Maestro</a></li>
-				<li><a href="#">AM EX</a></li>
-				<li><a href="#">Apple Pay</a></li>
-				<li><a href="#">Google Pay</a></li>
-				<li><a href="#">Klarna</a></li>
-			</ul>
 		</section>
+
+			<!-- Betaallinks -->
+			<h3>Pay Securely With</h3>
+		<section>
+
+			<img src="images/electron.svg" alt="electron">
+			<img src="images/visa.svg" alt="visa">
+			<img src="images/paypal.svg" alt="paypal">
+			<img src="images/mastercard.svg" alt="mastercard">
+			<img src="images/maestro.svg" alt="maestro">
+			<img src="images/amex.svg" alt="american express">
+			<img src="images/applepay.svg" alt="apple pay">
+			<img src="images/googlepay.svg" alt="googlepay">
+			<img src="images/klarna.svg" alt="klarna">
+
+		</section>
+		<p>2025 © Creed Fragrances</p>
 	</footer>
 	
 	<script defer src="scripts/script.js"></script>
