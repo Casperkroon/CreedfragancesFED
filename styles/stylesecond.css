@@ -1,44 +1,38 @@
-@font-face {
-	font-family: "Copperplate-Medium";
-	src: url("../fonts/Copperplate-Medium.woff")
-}
-@font-face {
-	font-family: "Copperplate-Light";
-	src: url("../fonts/Copperplate-Light.woff")
-}
+/*Main general*/
+
+
+/*Section 1*/
 
 h1 {
     visibility: hidden;
     display: none;
 }
 
-main section:nth-of-type(1) {
-    display:grid;
-    text-align: center;
-    background-color: rgb(242, 242, 242);
+main > a:first-of-type {
+    display: inline-block; 
+    margin: 2em; 
 }
+
+/*Het enige divje sorry het spijt me =((*/
 
 main div img {
     height: auto;
     max-width: 100%;
 }
 
-/* @media (min-width:57em) {
-
-    main div img {
-        height: auto;
-        max-width: 45%;
-    }
-} */
-
-main > a:first-of-type {
-    display: inline-block; 
-    margin: 2em; 
+div {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:2rem;
 }
 
-/*MAIN SECTION 2 + CAROUSEL*/
+/*Div Section 2 + Carousel*/
+/*(https://codepen.io/shooft/pen/yLKjzWa) voor code*/
+/*Chatgpt voor het responsive maken van de carousel. Prompt = code gepaste + how to make it so the carousel
+  allows for 2 and 3 images next to eachother when the page gets big enough.*/
 
-main div section:nth-of-type(1) > p,h2 {
+main div section:nth-of-type(1) > p,
+Main div section:nth-of-type(1) > h2 {
     flex-basis: 100%;
     text-transform: uppercase;
     font-family: "Copperplate-Light";
@@ -46,13 +40,11 @@ main div section:nth-of-type(1) > p,h2 {
     letter-spacing: 0.1em;
   }
 
-  main div section:nth-of-type(1) > h2 {
+main div section:nth-of-type(1) > h2 {
     font-size: 2em;
   }
 
 main div section:nth-of-type(1) {
-    /* display: flex;
-    flex-direction: column; */
     position: relative;
     overflow: hidden;
     outline: none;
@@ -103,8 +95,8 @@ main div section:nth-of-type(1) > a {
     aspect-ratio: 1/1;
     top: calc(50% - 1.5em);
 
-    color: white;
-    background-color: lightslategray;
+    color: var(--color-textwhite);
+    background-color: var(--color-backgroundgrey);
     outline: none;
     box-shadow: inset 0 0 0 1px currentColor;
 
@@ -156,14 +148,9 @@ main div section:nth-of-type(1) > a[href=next]::after {
 	transform: translateY(0) rotate(-45deg);
 }
 
-/* Einde carousel */
+/* Einde section 2 & Carousel */
 
-
-div {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap:2rem;
-}
+/*Wide screen*/
 
 @media (min-width: 57em) {
     div {
@@ -182,16 +169,29 @@ div {
         max-width: 80%;
       }
 
-      main details {
-        max-width: 55%;
+    main details > section {
+        max-width: 60%;
+    }
+
+    main details > section:first-of-type, 
+    main details > section:nth-of-type(2) {
+        margin: 2em;
+    }
+
+    main details section {
+        margin: 10em 2em;
     }
 }
 
+/* Div Section 3*/
+
 main div section:nth-of-type(3){
-    border-top: solid rgb(183, 183, 183) 1px;
-    border-bottom: solid rgb(183, 183, 183) 1px;
+    border-top: solid var(--color-dividerline) 1px;
+    border-bottom: solid var(--color-dividerline) 1px;
     display: flex;
 }
+
+/* Div Section 4*/
 
 main div section:nth-of-type(4) {
     display: flex;
@@ -218,9 +218,9 @@ main div section:nth-of-type(4) ul {
   }
 
 main div section:nth-of-type(4) button {
-    border: 1px solid black;
-    background-color: white;
-    color: black;
+    border: solid 1px black;
+    color: var(--color-staysblack);
+    background-color: var(--color-stayswhite);
     padding: 0.8em 1em;
     font-family: "Copperplate-Light";
     letter-spacing: 0.1em;
@@ -233,7 +233,6 @@ main div section:nth-of-type(4) button {
     font-size: 1.5em;
     margin-top: 1em;
     font-weight: 400;
-    /* flex-basis: 100%; */
   }
 
   main div section:nth-of-type(4) h3:first-of-type{
@@ -241,37 +240,38 @@ main div section:nth-of-type(4) button {
   }
 
   main div section:nth-of-type(4) button:hover {
-    background-color: black;
-    color: white;
+    background-color: var(--color-buttonhover);
+    color: var(--color-stayswhite);
   }
+
+  /*Div Section 5*/
 
   main div section:nth-of-type(5) a {
     text-align: center;
-    background-color: black;
-    color: white;
+    background-color: var(--color-text);
+    color: var(--color-textwhite);
     font-family: "Copperplate-Light";
     letter-spacing: 0.1em;
     padding: 0.7em 5em;
     text-decoration: none;
   }
 
+  /*Details sections*/
 
-main details > img {
+main details section > img {
     max-height: 15em;
-    max-width: auto;
 }
 
-main summary {
-    border-top: solid rgb(183, 183, 183) 1px;
-    border-bottom: solid rgb(183, 183, 183) 1px;
-    font-family: "Copperplate-Light";
-    font-size: 1em;
-    letter-spacing: 0.1em;
-    padding: 1em;
-
+main details section:nth-of-type(2) > img, 
+main details section:nth-of-type(4) img {
+    float: right;
 }
 
-main details p,h4 {
+main details section:nth-of-type(3) > img {
+    float: left;
+}
+
+main details section p, main details section h4 {
     font-family: "Caslon";
     letter-spacing: 0.1em;
     font-size: 1em;

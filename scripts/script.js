@@ -150,3 +150,20 @@ function createCaroCarrousel(carrouselID) {
   createCaroCarrousel("justButtons");
   //je kunt hier ook meerdere carrousellen activeren
 })();
+
+
+//eigen ding bron = https://www.youtube.com/watch?v=L8XbI9aJOXk
+
+const shopButton = document.querySelector('main section:nth-of-type(5) button')
+let image = document.querySelector('main section:nth-of-type(5) img')
+let audioo = new Audio('images/catlaughing.mp3')
+
+function catLaugh() {
+	image.src = "images/catmeme.jpg"
+	audioo.play()
+	
+	image.classList.add("flyaway");
+}
+
+
+shopButton.addEventListener("click",catLaugh)

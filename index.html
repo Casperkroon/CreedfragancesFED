@@ -10,17 +10,16 @@
 	
 	<link href="styles/style.css" rel="stylesheet">
 	<link href="styles/stylemain.css" rel="stylesheet">
-	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+	<link rel="icon" type="image/svg+xml" href="images/creed.png">
 </head>
 
 <body>
+	<a class="skip-link" href="#">Skip to content</a>
 	<header>
 
 		<a href="#"><img src="images/creedlogo.png" alt="creed logo"></a>
 
 		<!-- Main navigatie -->
-
-		<a href="#" class="visually-hidden">Skip to content</a>
 			
 			<button aria-hidden="true"><img src="images/hamburger.png" alt="open"></button>
 
@@ -80,7 +79,7 @@
 
 	</header>
 
-	<main>
+	<main id="main">
 		<section>
 		<p>Complimentary Shipping and Samples with Orders*</p>
 		</section>
@@ -134,22 +133,27 @@
 			<a href="next"></a>
 		</section>
 
+		<!-- Exclusieve offers -->
+		<h2>Exclusive To You</h2>
 		<section>
-			<!-- Exclusieve offers -->
-			<h2>Exclusive To You</h2>
 			<img src="images/royal_zwart.avif" alt="image of royal mayfair bottle">
-			<h3>Complimentary Delivery</h3>
-			<p>Your chosen fragrance is yours to enjoy with complimentary standard delivery,
-				ensuring a seamless shopping experience.</p>
-			<a href="#">Shop Now</a>
+			<section>
+				<h3>Complimentary Delivery</h3>
+				<p>Your chosen fragrance is yours to enjoy with complimentary standard delivery,
+					ensuring a seamless shopping experience.</p>
+				<a href="#">Shop Now</a>
+			</section>
 		</section>
 
 		<section>
 			<img src="images/samples_zwart.avif" alt="image of creed samples">
-			<h3>Complimentary Samples</h3>
-			<p>Take your experience to the next level with two complimentary samples of your choice,
-				available on selected orders.</p>
-			<a href="#">Shop Now</a>
+			<section>
+				<h3>Complimentary Samples</h3>
+				<p>Take your experience to the next level with two complimentary samples of your choice,
+					available on selected orders.</p>
+				<!-- <a href="#">Shop Now</a> -->
+				<button>Shop Now (Click me)</button>
+			</section>
 		</section>
 
 	</main>
@@ -163,7 +167,7 @@
 		
 			<!-- Social media links-->
 			<h2>Connect with us</h2>
-			<a href="#"><img src="images/facebook.png" alt="facebook logo"></a>
+			<a href="#"><img src="images/facebookiconsvg.png" alt="facebook logo"></a>
 			<a href="#"><img src="images/instagram.png" alt="instagram logo"></a>
 			<a href="#"><img src="images/xlogo.png" alt="x logo"></a>
 			<a href="#"><img src="images/tiktok.png" alt="tiktok logo"></a>
@@ -174,7 +178,8 @@
 		</section>
 
 		<section>
-			<h3>Help & Information</h3>
+			<details open>
+			<summary>Help & Information</summary>
 			<ul>
 				<li><a href="#">Contact Us</a></li>
 				<li><a href="#">Help Centre</a></li>
@@ -182,18 +187,44 @@
 				<li><a href="#">Delivery Information</a></li>
 				<li><a href="#">Online Benefits</a></li>
 			</ul>
-
+			</details>
+			
+			<details open>
+			<summary>The Company</summary>
 			<ul>
-				<li><a href="#">The Company</a></li>
-				<li><a href="#">Terms & Conditions</a></li>
-				<li><a href="#">International</a></li>
+				<li><a href="#">The Art of Millésime</a></li>
+				<li><a href="#">Sustainability Promise</a></li>
+				<li><a href="#">One Tree Planted</a></li>
 			</ul>
+			</details>
+
+			<details open>
+			<summary>Terms & Conditions</summary>
+			<ul>
+				<li><a href="#">Privacy Policy</a></li>
+				<li><a href="#">User Content Terms</a></li>
+				<li><a href="#">Cookies Policy</a></li>
+				<li><a href="#">Klarna</a></li>
+			</ul>
+			</details>
+
+			<details open>
+			<summary>International</summary>
+			<ul>
+				<li><a href="#">AUS</a></li>
+				<li><a href="#">France</a></li>
+				<li><a href="#">Germany</a></li>
+				<li><a href="#">Spain</a></li>
+				<li><a href="#">UK</a></li>
+				<li><a href="#">US</a></li>
+			</ul>
+			</details>
 
 		</section>
 
+		<section>
 			<!-- Betaallinks -->
 			<h3>Pay Securely With</h3>
-		<section>
 
 			<img src="images/electron.svg" alt="electron">
 			<img src="images/visa.svg" alt="visa">

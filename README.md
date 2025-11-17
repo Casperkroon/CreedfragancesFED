@@ -188,7 +188,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
   -Alles is berijkbaar met screenreader, logische volgorde deze keer. Alles duidelijk opgenoemd.
-  -H1 is aanwezig, maar onzichtbaar.
+  -H1 is aanwezig, maar onzichtbaar. Alle belangrijke secties worden ingeleid met een heading.
+  -Paginas hebben 1 h1 element per view, overige headings in logische volgorde geschreven.
+  -Media autoplayt niet, can gepauzeerd worden.
+  -Skiplink aanwezig
+  -heeft dark en light mode support
+  -html en css zijn valid
+
+
 
 
 
@@ -237,23 +244,39 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/eindscreenshot1.png" width="375px" alt="uitomst opdracht 1">
-  <img src="readme-images/eindscreenshot2.png" width="375px" alt="uitomst opdracht 1">
-  <img src="readme-images/eindscreenshot3.png" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/eindscreenshot1.png" width="375px" alt="header">
+  <img src="readme-images/eindscreenshot2.png" width="375px" alt="hamburger menu">
+  <img src="readme-images/eindscreenshot3.png" width="375px" alt="detailpagina aventus">
+  <img src="readme-images/eindscreenshotupdated.png" width="375px" alt="Grid gelukt">
+  <img src="readme-images/eindscreenshotupdated2.png" width="375px" alt="Uitgewerkte footer">
+  <img src="readme-images/eindscreenshotupdated3.png" width="375px" alt="Laatste beetje responsive">
 
 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
 
-  header nav bar is naar mijn mening heel accuraat gelukt en ben trots op hoe alles staat.
+  header nav bar is naar mijn mening accuraat gelukt en ben trots op hoe alles staat.
+  Ik heb geleerd hoe ik d.m.v. order bepaalde elementen te verschuiven.
   <img src="readme-images/eindscreenshot1.png" width="375px" alt="top">
+
+  Daarnaast heb ik door middel van grid brute-forcen geleerd hoe grid werkt en mijn footer responsive gemaakt.
+  Ik heb de feedback van het eerste gesprek om mijn footer verder uit te werken, en zelf bedenken hoe ik alles op de juiste plek kan krijgen. Via trial en error gelukt en begrijp nu waarom en hoe het werkt.
+  <img src="readme-images/eindscreenshotupdated2.png" width="375px" alt="Uitgewerkte footer">
+  <img src="readme-images/gridfooter.png" width="375px" alt="Uitgewerkte footer plus grid">
+
+  Verder heb ik geleerd hoe je door middel van custom properties een dark mode aan je pagina kan toevoegen.
+  <img src="readme-images/eindscreenshotupdateddarkmode" width="375px" alt="darkmode showcase">
 
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
   
-  footer moest responsive worden maar ik kwam er niet uit
-  <img src="readme-images/footerss" width="375px" alt="bummer">
+  Hoewel de footer responsive is en redelijk lijkt op het origineel, is het nog niet helemaal perfect. Dit is omdat de originele site bestaat uit dropdown menus die uit zichzelf openklappen bij grote schermen. Ik heb geprobeerd dit ook te maken maar ik ben er niet uitgekomen hoe ik dat gedaan moest krijgen. Het was steeds het 1 of het ander. Ik heb nu ervoor gekozen om de details standaard open te hebben zodat ze direct goed staan op groot scherm. Op klein scherm ziet het er nog steeds netjes uit, alleen is het iets meer scrollen.
+  <img src="readme-images/nietzogoed" width="375px" alt="Half opengeklapte details">
+  <img src="readme-images/nietzogoed2" width="375px" alt="Klein scherm lang scrollen">
+
+  skiplink is aanwezig en gestyled maar voor welke reden dan ook kreeg ik hem niet gecentered.
+  <img src="readme-images/skiplink" width="375px" alt="Skiplink werkt soort van">
 </details>
 
 
@@ -273,5 +296,32 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   2. https://www.creedfragrance.com afbeeldingen en fonts
   3. Chatgpt voor het responsive maken van de carousel. Prompt = code gepaste + how to make it so the carousel
   allows for 2 and 3 images next to eachother when the page gets big enough.
+  4. Audio en afbeelding van zelf toegevoegd javascript element beide van deze video: https://www.youtube.com/watch?v=L8XbI9aJOXk
 
 </details>
+
+FEEDBACK VAN EERSTE GESPREK
+
+>>Helemaal responsive maken
+>>Dark Light mode toevoegen
+>>Custom Properties
+>>Zoveel mogelijk margins weghalen
+
+h3 in footer section gooien
+
+geen space between maar margin auto 
+
+mediaquery:
+display flex op footer
+flex wrap wrap
+align items center
+
+flex basis 0 op 3e sectie
+flex grow 1
+
+3e sectie width = 100%
+2e sectie margin weg
+
+onderste sectie width = 100
+
+

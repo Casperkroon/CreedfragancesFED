@@ -1,19 +1,26 @@
-@font-face {
-	font-family: "Copperplate-Medium";
-	src: url("../fonts/Copperplate-Medium.woff")
-}
-@font-face {
-	font-family: "Copperplate-Light";
-	src: url("../fonts/Copperplate-Light.woff")
+/*Main general*/
+
+main button {
+    background-color: var(--color-backroundblack);
+    color: var(--color-textwhite);
+
+    text-decoration: none;
+    border: none;
+    border-radius: 0;
+
+    padding: 1em 1.5em;
+
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    font-family: "Copperplate-Light";
+
+    max-width: 30em;
 }
 
-main section:first-of-type {
-    display:grid;
-    text-align: center;
-    background-color: rgb(242, 242, 242);
-}
+/* Section 1*/
 
-  /*MAIN SECTION 1*/
+
+/*Section 2*/
 
 main section:nth-of-type(2) {
 	display:flex;
@@ -24,8 +31,8 @@ main section:nth-of-type(2) {
 }
 
 main a {
-    background-color: black;
-    color: white;
+    background-color: var(--color-backroundblack);
+    color: var(--color-textwhite);
 
     text-decoration: none;
     border: none;
@@ -39,10 +46,6 @@ main a {
 
     max-width: 30em;
 }
-
-/* main p {
-    max-width: 80%;
-} */
 
 
 video {
@@ -71,21 +74,18 @@ h2:first-of-type {
     margin:0;
 }
 
-p {
-    letter-spacing: 0.1em;
-}
-
 main section:nth-of-type(2) p:last-of-type {
     letter-spacing: 0.1em;
     margin-top:4em;
     margin-bottom:4em;
 }
 
-/*MAIN SECTION 3 + CAROUSEL*/
+/*Section 3 + Carousel*/
+/*(https://codepen.io/shooft/pen/yLKjzWa) voor code*/
+/*Chatgpt voor het responsive maken van de carousel. Prompt = code gepaste + how to make it so the carousel
+  allows for 2 and 3 images next to eachother when the page gets big enough.*/
 
 main section:nth-of-type(3) {
-    /* display: flex;
-    flex-direction: column; */
     position: relative;
     overflow: hidden;
     outline: none;
@@ -133,8 +133,8 @@ main section:nth-of-type(3) > a {
     aspect-ratio: 1/1;
     top: calc(50% - 1.5em);
 
-    color: white;
-    background-color: lightslategray;
+    color: var(--color-textwhite);
+    background-color: var(--color-backgroundgrey);
     outline: none;
     box-shadow: inset 0 0 0 1px currentColor;
 
@@ -204,44 +204,13 @@ main section:nth-of-type(3) > a[href=next]::after {
 
 /* END OF CAROUSEL */
 
-section:nth-of-type(3) img {
-	max-height: 17em;
-	max-width: auto;
-	align-self: center;
-    margin: 0.5em;
-}
+/*Section 3 4 5 Images*/
 
-section:nth-of-type(4) img {
-	max-height: 17em;
-	max-width: auto;
-	align-self: center;
-    margin: 0.5em;
-}
-
+section:nth-of-type(3) img,
+section:nth-of-type(4) img,
 section:nth-of-type(5) img {
 	max-height: 17em;
-	max-width: auto;
 	align-self: center;
-    margin: 0.5em;
-}
-
-
-
-main button {
-    background-color: black;
-    color: white;
-
-    text-decoration: none;
-    border: none;
-    border-radius: 0;
-
-    padding: 1em 1.5em;
-
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    font-family: "Copperplate-Light";
-
-    max-width: 30em;
 }
 
 /*Section 4*/
@@ -254,6 +223,8 @@ main section:nth-of-type(4) {
     margin: 1em;
 }
 
+/*Section 5*/
+
 main section:nth-of-type(5) {
     display: flex;
     flex-direction: column;
@@ -261,9 +232,63 @@ main section:nth-of-type(5) {
     text-align: center;
 }
 
+main section:nth-of-type(5) button {
+    transition: all 0.3s ease;
+}
+
+main section:nth-of-type(5) button:hover {
+    background-color: var(--color-purplebutton);
+    border-radius: 1em;
+    transform: scale(1.1);
+}
+
+ main section:nth-of-type(5) img {
+    transition: transform 5s ease, opacity 5s ease;
+  }
+
+.flyaway {
+    transform: translateX(-2000px) rotate(720deg);
+    opacity: 0;
+}
+
+/*Wide Screen version*/
+/*Wide Screen version*/
+/*Wide Screen version*/
+
 @media (min-width: 48em) {
     
-    /* main section:nth-of-type(4) img {
-    } */
+    main section:nth-of-type(4), main section:nth-of-type(5){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap:2em;
+    }
+    main section:nth-of-type(4) img {
+        max-height: none; 
+        width: 100%;
+        object-fit: contain;
+
+        grid-row-start: 1;
+        grid-column-start: 1;
+        grid-row-end: 4;
+    }
+    main section:nth-of-type(4) > section,
+    main section:nth-of-type(5) > section {
+        grid-row: 2;
+        align-items: start;
+    }
+
+
+    main section:nth-of-type(5) img {
+        max-height: none; 
+        width: 100%;
+        object-fit: contain;
+
+        grid-row-start: 1;
+        grid-column-start: 2;
+        grid-row-end: 4;
+    }
+    
+    main section:nth-of-type(5) {
+        margin-bottom: 2em;
+    }
   }
-  
