@@ -298,7 +298,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. [bron 1](https://codepen.io/shooft/pen/yLKjzWa) voor carousel
+  1. (https://codepen.io/shooft/pen/yLKjzWa) voor carousel
   2. https://www.creedfragrance.com afbeeldingen en fonts
   3. Chatgpt voor het responsive maken van de carousel. Prompt = code gepaste + how to make it so the carousel
   allows for 2 and 3 images next to eachother when the page gets big enough.
