@@ -195,6 +195,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   -heeft dark en light mode support
   -html en css zijn valid
 
+  <img src="readme-images/Toegankelijkheidstest1" width="375px" alt="WCAG checklist p1">
+  <img src="readme-images/Toegankelijkheidstest2" width="375px" alt="WCAG checklist p2">
+  <img src="readme-images/Toegankelijkheidstest3" width="375px" alt="WCAG checklist p3">
+  <img src="readme-images/Toegankelijkheidstest4" width="375px" alt="WCAG checklist p4">
+  <img src="readme-images/Toegankelijkheidstest5" width="375px" alt="WCAG checklist p5">
+
 
 
 
@@ -265,18 +271,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/gridfooter.png" width="375px" alt="Uitgewerkte footer plus grid">
 
   Verder heb ik geleerd hoe je door middel van custom properties een dark mode aan je pagina kan toevoegen.
-  <img src="readme-images/eindscreenshotupdateddarkmode" width="375px" alt="darkmode showcase">
+  <img src="readme-images/eindscreenshotupdateddarkmode.png" width="375px" alt="darkmode showcase">
 
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
   
   Hoewel de footer responsive is en redelijk lijkt op het origineel, is het nog niet helemaal perfect. Dit is omdat de originele site bestaat uit dropdown menus die uit zichzelf openklappen bij grote schermen. Ik heb geprobeerd dit ook te maken maar ik ben er niet uitgekomen hoe ik dat gedaan moest krijgen. Het was steeds het 1 of het ander. Ik heb nu ervoor gekozen om de details standaard open te hebben zodat ze direct goed staan op groot scherm. Op klein scherm ziet het er nog steeds netjes uit, alleen is het iets meer scrollen.
-  <img src="readme-images/nietzogoed" width="375px" alt="Half opengeklapte details">
-  <img src="readme-images/nietzogoed2" width="375px" alt="Klein scherm lang scrollen">
+  <img src="readme-images/nietzogoed.png" width="375px" alt="Half opengeklapte details">
+  <img src="readme-images/nietzogoed2.png" width="375px" alt="Klein scherm lang scrollen">
 
   skiplink is aanwezig en gestyled maar voor welke reden dan ook kreeg ik hem niet gecentered.
-  <img src="readme-images/skiplink" width="375px" alt="Skiplink werkt soort van">
+  <img src="readme-images/skiplink.png" width="375px" alt="Skiplink werkt soort van">
 </details>
 
 
