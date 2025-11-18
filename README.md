@@ -195,11 +195,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   -heeft dark en light mode support
   -html en css zijn valid
 
-  <img src="readme-images/Toegankelijkheidstest1" width="375px" alt="WCAG checklist p1">
-  <img src="readme-images/Toegankelijkheidstest2" width="375px" alt="WCAG checklist p2">
-  <img src="readme-images/Toegankelijkheidstest3" width="375px" alt="WCAG checklist p3">
-  <img src="readme-images/Toegankelijkheidstest4" width="375px" alt="WCAG checklist p4">
-  <img src="readme-images/Toegankelijkheidstest5" width="375px" alt="WCAG checklist p5">
+  <img src="readme-images/Toegankelijkheidstest1.jpg" width="375px" alt="WCAG checklist p1">
+  <img src="readme-images/Toegankelijkheidstest2.jpg" width="375px" alt="WCAG checklist p2">
+  <img src="readme-images/Toegankelijkheidstest3.jpg" width="375px" alt="WCAG checklist p3">
+  <img src="readme-images/Toegankelijkheidstest4.jpg" width="375px" alt="WCAG checklist p4">
+  <img src="readme-images/Toegankelijkheidstest5.jpg" width="375px" alt="WCAG checklist p5">
 
 
 
